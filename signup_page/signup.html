@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <img src="./Assets/arken_logo.png" alt="Arken logo and name" class="arken-logo">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-4">
+            <div class="card signup-card">
+                <h3 class="card-title">Sign Up</h3>
+                <form class="gy-2 signup-form">
+                    <input type="text" placeholder="Name" class="form-control mb-2 signup-input">
+                    <input type="email" placeholder="Email" class="form-control mb-2 signup-input">
+                    <input type="password" placeholder="Password" class="form-control mb-4 signup-input">
+                    <div class="row gx-2 mb-4">
+                        <div class="col-4">
+                            <button class="btn col-12 py-2 btn-apple" type="button">
+                                <img src="./Assets/apple_logo.png" alt="Apple logo">
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn col-12 py-2 btn-fb" type="button">
+                                <img src="./Assets/facebook_logo.png" alt="Facebook logo">
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn col-12 py-2 btn-google" type="button">
+                                <img src="./Assets/google_logo.png" alt="Google logo">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card px-0 py-2 mb-4 tnc-card">
+                        <div class="card-body">
+                            By selecting Agree and continue below, I agree to the 
+                            <a href="#" class="bold-link">Terms of Service and Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submi" class="btn btn-primary-lg mb-2">Agree and continue</button>
+                    </div>
+                    <p class="subtext align-self-center">Already have an account? <a href="#" class="bold-link">Log in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
