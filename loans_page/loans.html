@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="loans.css">
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <nav class="navbar fixed-top h-100 col-3 d-flex justify-content-center">
+            <h2 class="company-name align-self-start">Loan Shark Inc.</h2>
+            <div class="container p-0">
+                <ul class="navbar-list navbar-nav">
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-house-door"></i>
+                        <a href="" class="nav-link p-0">Home</a>
+                    </li>
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-cash"></i>
+                        <a href="" class="nav-link p-0">Loans</a>
+                    </li>
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-people"></i>
+                        <a href="" class="nav-link p-0">Clients</a>
+                    </li>
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-inbox"></i>
+                        <a href="" class="nav-link p-0">Inbox</a>
+                    </li>
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-gear"></i>
+                        <a href="" class="nav-link p-0">Settings</a>
+                    </li>
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        <a href="" class="nav-link p-0">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="arken-logo navbar-brand m-0 p-0 align-self-end">
+                <img src="./Assets/arken_logo_white.png" class="img-fluid" alt="Arken logo and name">
+            </a>
+        </nav>
+        <div class="row h-100">
+            <div class="dashboard col-9 offset-md-3 h-100">
+                <div class="row">
+                    <h3 class="page-title bold p-0">Loans</h3>
+                </div>
+                <div class="stats row">
+                    <div class="stats-header d-flex align-items-center p-0">
+                        <h4 class="stats-time-period bold m-0">This month</h4>
+                        <i class="bi bi-caret-down-fill"></i>
+                        <p class="stats-date-range m-0">01 Aug 2022 - 31 Aug 2022</p>
+                    </div>
+                    <!-- <div class="stats-main row d-flex" style="margin: auto; grid-gap: 0.5em"> -->
+                    <div class="stats-main row d-flex">
+                        <div class="stat-section col-3">
+                            <p class="stat-title bold">Active Loans</p>
+                            <p class="stat-data bold d-flex justify-content-center">7</p>
+                        </div>
+                        <div class="stat-section col-3">
+                            <p class="stat-title bold">Amount Due</p>
+                            <p class="stat-data bold d-flex justify-content-center"">₱ 55,200.00</p>
+                        </div>
+                        <div class="stat-section col-3">
+                            <p class="stat-title bold">Deliquencies</p>
+                            <p class="stat-data bold d-flex justify-content-center"">1</p>
+                        </div>
+                        <div class="stat-section col-3">
+                            <p class="stat-title bold">Defaulted</p>
+                            <p class="stat-data bold d-flex justify-content-center"">1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="loans row">
+                    <div class="loans-toolbar row d-flex justify-content-between p-0 mt-4 mb-4">
+                        <div class="btn-container col-6 d-flex p-0">
+                            <button class="btn-primary btn btn-med d-flex justify-content-center align-items-center">
+                                Add Client
+                                <span><i class="bi bi-plus-circle d-flex align-self-center"></i></span>
+                            </button>
+                            <button class="filter-btn btn btn-med d-flex justify-content-center align-items-center">
+                                Filter
+                                <span><i class="bi bi-funnel d-flex align-self-center"></i></span>
+                            </button>
+                        </div>
+                        <div class="search-bar d-flex justify-content-between align-items-center">
+                            <input type="text" placeholder="Search name or ID">
+                            <i class="bi bi-search"></i>
+                        </div>
+
+                    </div>
+                    <div class="loans-table">
+                        <table class="table table-hover table-borderless m-0">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Loan ID</th>
+                                    <th>Amount Due</th>
+                                    <th>Due Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nathan Garcia</td>
+                                    <td>AA000014</td>
+                                    <td>₱6500</td>
+                                    <td>27 Aug 2022</td>
+                                    <td class="warning bold">Waiting</td>
+                                </tr>
+                                <tr>
+                                    <td>Santino Mazzeo</td>
+                                    <td>AA000013</td>
+                                    <td>₱3400</td>
+                                    <td>21 Aug 2022</td>
+                                    <td class="paid bold">Paid</td>
+                                </tr>
+                                <tr>
+                                    <td>Herbert Garret</td>
+                                    <td>AA000011</td>
+                                    <td>₱5000</td>
+                                    <td>15 Aug 2022</td>
+                                    <td class="paid bold">Paid</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    <div class="table-footer d-flex justify-content-between align-items-center">
+                        <p class="footer-text m-0">Showing 1 - 8 of 8</p>
+                        <div class="page-change d-flex align-items-center">
+                            <i class="bi bi-arrow-left-short arrow-left"></i>
+                            <p class="page-number d-flex justify-content-center align-items-center m-0">1</p>
+                            <i class="bi bi-arrow-right-short arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

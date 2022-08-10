@@ -6,10 +6,12 @@
 
 :root {
     --bg-primary: #F6FAFD;
-    --bg-secondary: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);;
+    --bg-secondary: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);
     --bg-white: #FFFFFF;
     --bg-button-primary: linear-gradient(286.17deg, #FFC02D 0%, #FFF494 100%);
     --bg-button-primary-hover: linear-gradient(286.17deg, #FD9F30 0%, #FFE68E 100%);
+    --bg-button-secondary: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);
+    --bg-button-secondary-hover: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);
     --clr-primary: #434548;
     --clr-secondary: #218BDB;
     --clr-positive: #68CFBF;
@@ -17,7 +19,7 @@
     --clr-danger: #DC6D67;
     --clr-light40: #B4B5B6;
     --clr-white: #FFFFFF;
-    --bdr-primary: 2px solid rgba(67, 69, 72, 0.2);
+    --bdr-color: rgba(67, 69, 72, 0.2);
 }
 
 body {
@@ -117,6 +119,26 @@ body {
     height: 200px;
 }
 
+/* Loan toolbar */
+
+.toolbar-title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.btn-container .btn {
+    width: 136px;
+}
+
+.btn-container .btn:not(:last-child) {
+    margin-right: 1em;
+}
+
+.btn i {
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+}
+
 /* Loan table */
 
 .table-container {
@@ -137,7 +159,7 @@ th {
 
 .table-footer {
     padding: 1em 1.5em;
-    border-top: var(--bdr-primary);
+    border-top: 2px solid var(--bdr-color);
     background: var(--bg-white);
 }
 
@@ -165,6 +187,15 @@ th {
 }
 
 /* Right section */
+
+.notifs i {
+    font-size: 2rem;
+}
+
+.dashboard-date {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
 
 .balance,
 .active-loans,
@@ -211,6 +242,10 @@ th {
     padding: 0;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 .bold-link {
     font-weight: 700;
     color: var(--clr-primary);
@@ -241,6 +276,22 @@ th {
 .btn-primary:focus {
     color: var(--clr-white);
     background: var(--bg-button-primary-hover);
+}
+
+.btn-secondary {
+    color: var(--clr-white);
+    font-weight: bold;
+    
+    border-radius: 28px;
+    border: none;
+
+    background: var(--bg-button-secondary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: var(--clr-white);
+    background: var(--bg-button-secondary-hover);
 }
 
 .btn-large {
