@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <nav class="navbar fixed-top h-100 col-3 d-flex justify-content-center">
+            <h2 class="company-name align-self-start">Loan Shark Inc.</h2>
+            <div class="container p-0">
+                <ul class="navbar-list navbar-nav">
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-house-door"></i>
+                        <a href="" class="nav-link p-0">Home</a>
+                    </li>
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-cash"></i>
+                        <a href="" class="nav-link p-0">Loans</a>
+                    </li>
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-people"></i>
+                        <a href="" class="nav-link p-0">Clients</a>
+                    </li>
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-inbox"></i>
+                        <a href="" class="nav-link p-0">Inbox</a>
+                    </li>
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-gear"></i>
+                        <a href="" class="nav-link p-0">Settings</a>
+                    </li>
+                    <li class="nav-item navbar-item d-flex align-items-center">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        <a href="" class="nav-link p-0">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="arken-logo navbar-brand m-0 p-0 align-self-end">
+                <img src="./Assets/arken_logo_white.png" class="img-fluid" alt="Arken logo and name">
+            </a>
+        </nav>
+        <div class="row h-100">
+            <div class="dashboard col-9 offset-md-3 h-100">
+                <div class="row">
+                    <div class="col-9 h-100">
+                        <div class="main-chart">
+                            <div class="main-chart-title d-flex align-items-center">
+                                <h3 class="title-time-period m-0">Today</h3>
+                                <i class="bi bi-caret-down-fill"></i>
+                                <p class="title-date m-0">25 Aug 2022</p>
+                            </div>
+                            <div class="main-chart-chart dashboard-section d-flex align-items-center justify-content-center">
+                                Insert chart here
+                            </div>
+                        </div>
+                        <div class="loan-info h-100">
+                            <div class="table-container dashboard-section">
+                                <table class="table table-hover table-borderless m-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Loan ID</th>
+                                            <th>Amount</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Nathan Garcia</td>
+                                            <td>AA000014</td>
+                                            <td>₱6500</td>
+                                            <td class="status warning">Waiting</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Santino Mazzeo</td>
+                                            <td>AA000013</td>
+                                            <td>₱3400</td>
+                                            <td class="status paid">Paid</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Herbert Garret</td>
+                                            <td>AA000011</td>
+                                            <td>₱5000</td>
+                                            <td class="status paid">Paid</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-footer">
+                                <a href="#" class="blue-link d-flex justify-content-end">See all →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 h-100">
+                        <div class="balance dashboard-section">
+                            <p class="balance-title section-title">Balance</p>
+                            <p class="balance-amount d-flex justify-content-center">₱55,200.00</p>
+                        </div>
+                        <div class="active-loans dashboard-section">
+                            <p class="active-loans-title section-title">Active Loans</p>
+                            <p class="active-loans-count d-flex justify-content-center">7</p>
+                        </div>
+                        <div class="loan-status dashboard-section d-flex flex-column">
+                            <p class="loan-status-title section-title">Loan Status</p>
+                            <p class="loan-status-chart d-flex align-self-center">Insert chart here</p>
+                        </div>
+                        <div class="add-client dashboard-section d-flex flex-column justify-content-between">
+                            <p class="add-client-title section-title">Add new client</p>
+                            <button class="add-btn btn btn-primary btn-small align-self-end">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
