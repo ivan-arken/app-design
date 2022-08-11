@@ -11,6 +11,8 @@
     --bg-gray: #C4C4C4;
     --bg-button-primary: linear-gradient(286.17deg, #FFC02D 0%, #FFF494 100%);
     --bg-button-primary-hover: linear-gradient(286.17deg, #FD9F30 0%, #FFE68E 100%);
+    --bg-button-secondary: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);
+    --bg-button-secondary-hover: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);
     --clr-primary: #434548;
     --clr-secondary: #218BDB;
     --clr-positive: #68CFBF;
@@ -276,6 +278,22 @@ th {
 .btn-primary:focus {
     color: var(--clr-white);
     background: var(--bg-button-primary-hover);
+}
+
+.btn-secondary {
+    color: var(--clr-white);
+    font-weight: bold;
+    
+    border-radius: 28px;
+    border: none;
+
+    background: var(--bg-button-secondary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: var(--clr-white);
+    background: var(--bg-button-secondary-hover);
 }
 
 .btn-large {

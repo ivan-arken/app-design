@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="borrower_kyc.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a href="#" class="navbar-brand">
+            <img src="./Assets/arken_logo.png" alt="Arken logo and name">
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-list navbar-nav">
+                <li class="nav-item navbar-item">
+                    <a href="" class="nav-link p-0">Applications</a>
+                </li>
+                <li class="nav-item navbar-item">
+                    <a href="" class="nav-link p-0">Documents</a>
+                </li>
+                <li class="nav-item navbar-item">
+                    <a href="" class="nav-link p-0">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid h-100 m-0 p-0">
+        <div class="row h-100">
+            <div class="main-content col-8 offset-md-2">
+                <div class="kyc-info">
+                    <h3 class="info-greeting bold">Hello John,</h3>
+                    <p class="info-description">
+                        You have 2 missing pieces of information
+                    </p>
+                </div>
+                <div class="kyc-checklist list-group">
+                    <div class="checklist-req isComplete list-group-item d-flex align-items-center">
+                        <img src="./Assets/checkbox_checked.png" class="me-4" alt="">
+                        <div class="requirement col-6 d-flex flex-column">
+                            <p class="req-title bold m-0">Personal details</p>
+                            <p class="req-description light-40 m-0">Name, birthday, TIN, address</p>
+                        </div>
+                        <button class="edit-btn btn-secondary btn btn-med ms-auto">Edit</button>
+                    </div>
+                    <div class="checklist-req list-group-item d-flex align-items-center">
+                        <img src="./Assets/checkbox_unchecked.png" class="me-4" alt="">
+                        <div class="requirement col-6 d-flex flex-column">
+                            <p class="req-title bold m-0">IDs</p>
+                            <p class="req-description light-40 m-0">Passport, PRC ID</p>
+                        </div>
+                        <button class="edit-btn btn-secondary btn btn-med ms-auto">Upload</button>
+                    </div>
+                    <div class="checklist-req list-group-item d-flex align-items-center">
+                        <img src="./Assets/checkbox_unchecked.png" class="me-4" alt="">
+                        <div class="requirement col-6 d-flex flex-column">
+                            <p class="req-title bold m-0">Proof of income</p>
+                            <p class="req-description light-40 m-0">Certificate of employment</p>
+                        </div>
+                        <button class="edit-btn btn-secondary btn btn-med ms-auto">Upload</button>
+                    </div>
+                </div>
+                <button class="submit-btn btn-primary btn btn-large">Submit for review</button>
+            </div>
+            <div class="col-4 h-100 m-0 p-0 image-placeholder"></div>
+        </div>
+    </div>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
