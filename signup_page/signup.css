@@ -6,12 +6,23 @@
 
 :root {
     --bg-primary: #F6FAFD;
+    --bg-secondary: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);;
     --bg-white: #FFFFFF;
+    --bg-gray: #C4C4C4;
+    --bg-complete: #E4F3F9;
     --bg-button-primary: linear-gradient(286.17deg, #FFC02D 0%, #FFF494 100%);
     --bg-button-primary-hover: linear-gradient(286.17deg, #FD9F30 0%, #FFE68E 100%);
+    --bg-button-secondary: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);
+    --bg-button-secondary-hover: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);
     --clr-primary: #434548;
+    --clr-secondary: #218BDB;
+    --clr-positive: #68CFBF;
+    --clr-warning: #FFC02D;
+    --clr-danger: #DC6D67;
+    --clr-light25: #C9CCD0;
     --clr-light40: #B4B5B6;
     --clr-white: #FFFFFF;
+    --bdr-color: rgba(67, 69, 72, 0.2);
 }
 
 body {
@@ -22,15 +33,9 @@ body {
     
     height: 100vh;
     background: var(--bg-primary);
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .signup-card {
-    /* width: 520px; */
-    /* max-width: 520px; */
     padding: 2.5em;
     border-radius: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -39,9 +44,21 @@ body {
 }
 
 .card-title {
+    margin-bottom: 1em;
+}
+
+.title {
     font-size: 2rem;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 2.5rem;
+}
+
+.account-type {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+.input {
     margin-bottom: 1em;
 }
 
@@ -49,14 +66,10 @@ body {
     font-size: 1rem;
     line-height: 1.5em;
 
-    border: 1px solid rgba(67, 69, 72, 0.2);
+    border: 1px solid var(--bdr-color);
     border-radius: 24px;
     width: 100%;
     padding: 0.75em 1.5em;
-}
-
-.form-input:not(:last-child) {
-    margin-bottom: 0.5em;
 }
 
 .or-separator {
@@ -84,25 +97,11 @@ body {
     margin-left: 1em;
 }
 
-/* .login-btn-container {
-    display: flex;
-    justify-content: space-between;
-} */
-
 .login-with-btn {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-
-    /* width: 32%; */
     padding: 1em 0;
     border-radius: 8px;
     border: none;
 }
-
-/* .login-with-btn:not(:last-child) {
-    margin-right: 1em;
-} */
 
 .btn-apple {
     background: #000000;
@@ -121,13 +120,13 @@ body {
     line-height: 1.5rem;
 
     padding: 1.5rem;
-    margin: 1em 0;
+    margin: 1.5em 0;
     border-radius: 8px;
 
     background: rgba(67, 69, 72, 0.1);
 }
 
-.btn-primary-large {
+.btn-primary {
     width: 100%;
 }
 
@@ -141,40 +140,88 @@ body {
 
 /* --- Utility and Components --- */
 
+/* Utilities */
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light-40 {
+    color: var(--clr-light40);
+}
+
 .bold-link {
     font-weight: 700;
     color: var(--clr-primary);
 }
 
-.scale5 {
+.btn {
     cursor: pointer;
     transform: scale(1);
     transition: transform 250ms;
 }
 
-.scale5:hover,
-.scale5:focus {
+.btn:hover,
+.btn:focus {
     transform: scale(1.05);
 }
 
-.btn-primary-large {
+.btn-primary {
+    color: var(--clr-primary);
     font-weight: bold;
-    font-size: 0.875rem;
-
-    height: 56px;
+    
     border-radius: 28px;
     border: none;
 
     background: var(--bg-button-primary);
 }
 
-.btn-primary-large:hover,
-.btn-primary-large:focus {
+.btn-primary:hover,
+.btn-primary:focus {
     color: var(--clr-white);
     background: var(--bg-button-primary-hover);
 }
 
+.btn-secondary {
+    color: var(--clr-white);
+    font-weight: bold;
+    
+    border-radius: 28px;
+    border: none;
 
+    background: var(--bg-button-secondary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: var(--clr-white);
+    background: var(--bg-button-secondary-hover);
+}
+
+.btn-large {
+    font-size: 0.875rem;
+    height: 56px;
+}
+
+.btn-med {
+    font-size: 0.875rem;
+    height: 40px;
+}
+
+.btn-small {
+    font-size: 0.625rem;
+    height: 32px;
+}
+
+.blue-bold {
+    font-weight: 700;
+    color: var(--clr-secondary)
+}
 
 /* --- Design --- */
 
