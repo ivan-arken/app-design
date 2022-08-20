@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #F6FAFD;
+    --bg-secondary: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);;
+    --bg-white: #FFFFFF;
+    --bg-gray: #C4C4C4;
+    --bg-transparent: rgba(67, 69, 72, 0.1);
+    --bg-complete: #E4F3F9;
+    --bg-button-primary: linear-gradient(286.17deg, #FFC02D 0%, #FFF494 100%);
+    --bg-button-primary-hover: linear-gradient(286.17deg, #FD9F30 0%, #FFE68E 100%);
+    --bg-button-secondary: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);
+    --bg-button-secondary-hover: linear-gradient(286.17deg, #218BDB 0%, #69B8F4 100%);
+    --clr-primary: #434548;
+    --clr-secondary: #218BDB;
+    --clr-positive: #68CFBF;
+    --clr-warning: #FFC02D;
+    --clr-danger: #DC6D67;
+    --clr-light25: #C9CCD0;
+    --clr-light40: #B4B5B6;
+    --clr-white: #FFFFFF;
+    --bdr-color: rgba(67, 69, 72, 0.2);
+}
+
+::placeholder {
+    color: var(--clr-light25);
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--clr-primary);
+    
+    height: 100vh;
+    background: var(--bg-primary);
+}
+
+/* Nav */
+
+.navbar {
+    padding: 1.5em 2.5em;
+    background: var(--bg-white);
+    box-shadow: 0px 0px 40px rgba(67, 69, 72, 0.1);
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 4em;
+}
+
+.nav-item a {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    color: var(--clr-primary);
+}
+
+/* KYC Form */
+
+.kyc-form {
+    margin-top: 226px;
+    padding: 0 6em;
+}
+
+.form-title {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.form-description {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.input-container {
+    margin: 4em 0 12.5em 0;
+}
+
+.input:not(:last-child) {
+    margin-bottom: 2em;
+}
+
+.input-number,
+.input-prompt {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.input-number {
+    width: 54px;
+    height: 54px;
+    background: var(--bg-transparent);
+    border-radius: 27px;
+    margin: 0 1em 0 0;
+}
+
+.left-border {
+    height: 122px;
+    width: 4px;
+    border-radius: 2px;
+    margin: 24px 49px 0 25px;
+    background: var(--bg-transparent);
+}
+
+.long-border {
+    height: 560px;
+}
+
+.input-input {
+    width: 400px;
+    background: none;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid var(--clr-light40);
+
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--clr-primary)
+}
+
+.input-label:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.form-label {
+    font-size: 0.975rem;
+    line-height: 1.5rem;
+}
+
+.submit-btn {
+    height: 5em;
+    border: none;
+    background: var(--bg-button-primary);
+
+    font-size: 1.125rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.side-img {
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    top: 106px;
+}
+
+/* Utilities */
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light-40 {
+    color: var(--clr-light40);
+}
+
+.bold-link {
+    font-weight: 700;
+    color: var(--clr-primary);
+}
+
+.btn {
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    color: var(--clr-primary);
+    font-weight: bold;
+    
+    border-radius: 28px;
+    border: none;
+
+    background: var(--bg-button-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: var(--clr-white);
+    background: var(--bg-button-primary-hover);
+}
+
+.btn-secondary {
+    color: var(--clr-white);
+    font-weight: bold;
+    
+    border-radius: 28px;
+    border: none;
+
+    background: var(--bg-button-secondary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: var(--clr-white);
+    background: var(--bg-button-secondary-hover);
+}
+
+.btn-large {
+    font-size: 0.875rem;
+    height: 56px;
+}
+
+.btn-med {
+    font-size: 0.875rem;
+    height: 40px;
+}
+
+.btn-small {
+    font-size: 0.625rem;
+    height: 32px;
+}
+
+.bb {
+    border: 1px solid blue;
+}

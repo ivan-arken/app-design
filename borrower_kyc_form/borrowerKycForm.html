@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="borrowerKycForm.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a href="#" class="navbar-brand">
+            <img src="./Assets/arken_logo.png" alt="Arken logo and name">
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-list navbar-nav">
+                <li class="nav-item navbar-item">
+                    <a href="" class="nav-link p-0">Applications</a>
+                </li>
+                <li class="nav-item navbar-item">
+                    <a href="" class="nav-link p-0">Documents</a>
+                </li>
+                <li class="nav-item navbar-item">
+                    <a href="" class="nav-link p-0">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid h-100 m-0 p-0">
+        <div class="row h-100">
+            <div class="col-8 kyc-form">
+                <h3 class="form-title bold">Personal details</h3>
+                <p class="form-description mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="input-container">
+                    <div class="input">
+                        <div class="input-top d-flex align-items-center">
+                            <p class="input-number flex-center">1</p>
+                            <p class="input-prompt m-0 bold">What is your first name?</p>
+                        </div>
+                        <div class="input-bot d-flex align-items-center">
+                            <div class="left-border"></div>
+                            <input type="text" placeholder="First Name" class="input-input m-0">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="input-top d-flex align-items-center">
+                            <p class="input-number flex-center">2</p>
+                            <p class="input-prompt m-0 bold">What is your last name?</p>
+                        </div>
+                        <div class="input-bot d-flex align-items-center">
+                            <div class="left-border"></div>
+                            <input type="text" placeholder="Last Name" class="input-input m-0">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="input-top d-flex align-items-center">
+                            <p class="input-number flex-center">3</p>
+                            <p class="input-prompt m-0 bold">When is your birthday?</p>
+                        </div>
+                        <div class="input-bot d-flex align-items-center">
+                            <div class="left-border"></div>
+                            <input type="text" placeholder="DD/MM/YYYY" class="input-input m-0">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="input-top d-flex align-items-center">
+                            <p class="input-number flex-center">4</p>
+                            <p class="input-prompt m-0 bold">What is your address?</p>
+                        </div>
+                        <div class="input-bot d-flex align-items-center">
+                            <div class="left-border long-border"></div>
+                            <div class="address-input-container">
+                                <div class="input-label d-flex flex-column bold">
+                                    <label for="address-street" class="form-label">Address</label>
+                                    <input type="text" placeholder="124 Conch Street" id="address-street" class="input-input form-input m-0">
+                                </div>
+                                <div class="input-label d-flex flex-column bold">
+                                    <label for="address-city" class="form-label">City</label>
+                                    <input type="text" placeholder="Bikini Bottom" id="address-city" class="input-input form-input m-0">
+                                </div>
+                                <div class="input-label d-flex flex-column bold">
+                                    <label for="address-province" class="form-label">Province</label>
+                                    <input type="text" placeholder="NCR" id="address-province" class="input-input form-input m-0">
+                                </div>
+                                <div class="input-label d-flex flex-column bold">
+                                    <label for="address-zip" class="form-label">Zip Code</label>
+                                    <input type="text" placeholder="1234" id="address-zip" class="input-input form-input m-0">
+                                </div>
+                                <div class="input-label d-flex flex-column bold">
+                                    <label for="address-country" class="form-label">Country</label>
+                                    <input type="text" placeholder="Philippines" id="address-country" class="input-input form-input m-0">
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <button class="submit-btn fixed-bottom col-8">Submit</button>
+            </div>
+            <img class="side-img col-4 p-0 m-0 fixed-right" src="./Assets/id_illus.png" alt="">
+        </div>
+    </div>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
